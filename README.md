@@ -1,0 +1,4 @@
+# Javascript + operator unexpected behavior with undefined and null
+This repo contains a simple JavaScript example demonstrating unexpected behavior of the + operator when used with undefined and null values.
+The `bug.js` file shows the unexpected behavior.  The `bugSolution.js` file shows how to fix this issue.
+The issue is that when using the + operator with undefined or null,  it will not treat them as 0.  Instead, it converts `undefined` to `NaN` and `null` to `"null"`. Therefore, when adding it to a number the result is also not as expected. The solution is to convert the values to numbers explicitly.
